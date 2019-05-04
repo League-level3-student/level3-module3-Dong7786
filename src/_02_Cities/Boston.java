@@ -5,10 +5,10 @@ public class Boston extends City {
 	public Boston(int population, double growthRate) {
 		super(population, growthRate);
 	}
-
+	double taxes = population * growthRate;
 	@Override
 	double getAnnualTaxes() {
-		return 0;
+		return taxes + population /2;
 	}
 
 }
